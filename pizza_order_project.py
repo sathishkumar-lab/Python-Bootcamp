@@ -17,22 +17,22 @@ Your final bill is: $28.
 
 print("Welcome to Python Pizza Deliveries!")
 size=input("What size of pizza do you want? S, M, or L : ")
-if size=="S":
-    prize=int(15)
-elif size=="M":
-    prize=int(20)
-elif size=="L":
-    prize=int(25)
+if size=="S" or size=="s":
+    prize=15
+elif size=="M" or size=="m":
+    prize=20
+elif size=="L" or size=="l":
+    prize=25
 else:
     print("You have choosen an invalid size")
 
 pepperoni=input("Do you want pepperoni on your pizza? Y or N : ")
-if pepperoni=="Y":
-    if size=="S":
+if pepperoni=="Y" or pepperoni=="y":
+    if size=="S" or size=="s":
         prize+=2
     else:
-        prize=+3
+        prize+=3
 cheese=input("Do you want extra cheese? y or N : ")
-if cheese==Y:
+if cheese=="Y" or cheese=="y":
     prize+=1
-print("your final bill is : $",prize)
+print(f"your final bill is : ${prize}")
