@@ -10,7 +10,7 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 #Easy
 """
-password=" "
+password=""
 for char in range(0,nr_letters):
     password+=random.choice(letters)
 for char in range(0,nr_symbols):
@@ -30,7 +30,7 @@ for char in range(0,nr_numbers):
     password_list.append(random.choice(numbers))
 
 random.shuffle(password_list)
-password=" "
+password=""
 for char in password_list:
     password+=char
 print(f"\nYour password is : {password}")
