@@ -35,4 +35,5 @@ if pepperoni=="Y" or pepperoni=="y":
 cheese=input("Do you want extra cheese? y or N : ")
 if cheese=="Y" or cheese=="y":
     prize+=1
+    
 print(f"your final bill is : ${prize}")
