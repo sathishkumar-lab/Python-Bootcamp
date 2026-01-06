@@ -1,4 +1,4 @@
-print("\n\t\t\t\033[1m Welcome to tip calculator! \033[0m")
+print("\n\n\t\t\t\033[1m Welcome to tip calculator! \033[0m")
 bill=int(input("\n Enter the total bill : "))
 tip=int(input("\n How much tip would you like to give? 5, 7, 10 : "))
 member=int(input("\n How many member do you want to split : "))
