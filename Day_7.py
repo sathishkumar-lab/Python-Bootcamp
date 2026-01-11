@@ -7,7 +7,7 @@ print(logo)
 word_list = ["mango","orange","kiwi"]
 
 chosen_word=random.choice(word_list)
-print(chosen_word)
+#print(chosen_word)
 
 #To find "_" for chosen_word
 placeholders=""
@@ -46,7 +46,7 @@ while not gameover:
 
     if guess not in chosen_word:
         lives-=1
-        print("You guessed {guess}, that's not in the word. You lose a life.\n")
+        print(f"You guessed {guess}, that's not in the word. You lose a life.\n")
         if lives==0:
             gameover=True
             print(f"*********************** YOU LOSE **********************")
